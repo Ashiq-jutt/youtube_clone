@@ -38,13 +38,16 @@ function VideoDetail() {
               // top: "86px",
               bgcolor: "grey",
             }}
-          >
-            <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${id}`}
-              className="reacr-player"
-              controls
-            />
-          </Box>
+          />
+          <ReactPlayer
+            url={`https://www.youtube.com/watch?v=${id}`}
+            // className="reacr-player"
+            width="640px"
+            height="360px"
+            style={{ border: "2px solid black" }}
+            controls
+          />
+          {/* </Box> */}
         </Box>
       </Stack>
       <Typography variant="h5" fontWeight="bold" p={2} sx={{ color: "#fff" }}>
